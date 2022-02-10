@@ -101,7 +101,7 @@ hr {
 #pesquisar-receita{
     color: white;
     background-color: #3b3b3b;
-    border: 2px solid #8a8a8a;
+    border: 1px solid #8a8a8a;
     font-size: 18px;
     width: 30%;
     padding: 8px 20px;
@@ -113,7 +113,6 @@ hr {
     background-color: #2e2e2e;
     width: 60%;
     outline: #3c80ff solid 2px;
-    border: none;
 }
 
 #pesquisar-receita:hover{
@@ -180,30 +179,39 @@ hr {
 .container-comidas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    justify-content: space-between;
+}   
 
 .bloco-de-comidas{
-    width: 250px;
+    
+    width: 300px;
     padding: 0px 5%;
-    margin: 20px 0px;
-    align-items: center;
+    margin: 30px auto;
 }
 
 .bloco-de-comidas img{
+    object-fit: cover;
     width: 100%;
     height: 250px;
     border-radius: 5px 5px 0px 0px;
     display: block;
 }
 
+.bloco-de-comidas:nth-child(3) img{
+    object-position: bottom;
+}
+
+.bloco-de-comidas:nth-child(4) img{
+    object-position: bottom;
+}
+
 .bloco-de-comidas h2{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    font-weight: bold;
     padding: 10px 0px;
     background-color: #0e0e0e;
     color: #ebebeb;
-    font-size: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -212,5 +220,18 @@ hr {
     padding: 20px 15px;
     font-size: 19px;
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.bloco-de-comidas a{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    background-color: #131313;
+    color: #e7e7e7;
+    font-size: 20px;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
 
