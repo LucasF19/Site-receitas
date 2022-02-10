@@ -103,7 +103,7 @@ hr {
     background-color: #3b3b3b;
     border: 1px solid #8a8a8a;
     font-size: 18px;
-    width: 30%;
+    width: 300px;
     padding: 8px 20px;
     border-radius: 20px;
     transition: 0.3s;
@@ -111,7 +111,7 @@ hr {
 
 #pesquisar-receita:focus{
     background-color: #2e2e2e;
-    width: 60%;
+    width: 500px;
     outline: #3c80ff solid 2px;
 }
 
@@ -180,13 +180,13 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0px 15px;
 }   
 
 .bloco-de-comidas{
-    
     width: 300px;
-    padding: 0px 5%;
     margin: 30px auto;
+    transition: 0.3s;
 }
 
 .bloco-de-comidas img{
@@ -197,13 +197,18 @@ hr {
     display: block;
 }
 
+.bloco-de-comidas:nth-child(1) img{
+    object-position: bottom;
+}
+
 .bloco-de-comidas:nth-child(3) img{
     object-position: bottom;
 }
 
-.bloco-de-comidas:nth-child(4) img{
+.bloco-de-comidas:nth-child(5) img{
     object-position: bottom;
 }
+
 
 .bloco-de-comidas h2{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
@@ -233,5 +238,32 @@ hr {
     text-align: center;
     display: block;
     text-decoration: none;
+}
+
+.bloco-de-comidas:hover{
+    box-shadow: 10px 5px 3px rgb(32, 32, 32);
+}
+
+.pagination{
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.pagination a{
+    display: inline-block;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.pagination a:hover{
+    color: #ececec;
+    background-color: #ff3d3d;
 }
 
