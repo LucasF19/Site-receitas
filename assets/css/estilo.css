@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
 
 /* HEADER */
 
@@ -6,7 +6,9 @@
     font-size: 40px;
     color: #f3f3f3;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-weight: bold;
     text-decoration: none;
+    margin: 0px 10px;
 }
 
 .cabecalho{
@@ -53,26 +55,26 @@
 
 .fundo-principal{
     background-image: url("../img/fundo/pexels-fidel-hajj-2814828.jpg");
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: absolute;
 }
 
 .Imagem-comida-fundo{
     display: block;
     width: 50%;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 /* DIV COR SOLIDA ESQUERDA*/
 
 .fundo-metade{
-    width: 55%;
+    width: 60%;
     height: 100%;
     background-color: #202020;
+}
+
+.principal-centralizado{
+    padding-bottom: 45px;
 }
 
 .titulo-subtitulo{
@@ -80,7 +82,6 @@
     color: #e4e4e4;
     text-align: center;
     font-weight: bold;
-    /*padding-top: 400px;*/ 
     font-size: 70px;
 }
 
@@ -120,22 +121,24 @@ hr {
 }
 
 /* BLOCO DE ECONOMIZE TEMPO E DINHEIRO*/
+
 .economize-tempo-e-dinheiro{
     background-color: #ffffff;
 }
-.economize-tempo-e-dinheiro h2{
+.economize-tempo-e-dinheiro h1{
     color: #FF725E;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 15px 0px;
-    font-size: 45px; 
+    padding: 20px 0px;
+    font-size: 40px; 
 }
 
-.imagens-economize{
+.container-vantagens{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    margin: 0px auto;
+    margin-bottom: 40px;
 }
 
 .bloco-vantagens img{
@@ -155,6 +158,59 @@ hr {
 .bloco-vantagens p{
     font: 20px 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    padding: 10px 50px;
-    margin-bottom: 200px;
+    padding: 20px 50px;
 }
+
+/* Food Section */
+
+.menu-de-comidas{
+    background-color: #2c2c2c;
+}
+
+.menu-de-comidas h1{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #202020;
+    color: #ececec;
+    padding: 20px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container-comidas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bloco-de-comidas{
+    width: 250px;
+    padding: 0px 5%;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.bloco-de-comidas img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px 5px 0px 0px;
+    display: block;
+}
+
+.bloco-de-comidas h2{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 0px;
+    background-color: #0e0e0e;
+    color: #ebebeb;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bloco-de-comidas p{
+    background-color: #8a8a8a;
+    padding: 20px 15px;
+    font-size: 19px;
+    text-align: center;
+}
+
