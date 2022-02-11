@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
 /* HEADER */
-
 .logo a{
     font-size: 40px;
     color: #f3f3f3;
@@ -19,22 +18,19 @@
     padding: 10px 1%;
 }
 
-.menu-listas{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-}
-
 .menu-item{
-    font-size: 22px;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: #f3f3f3;
     margin-right: 5px;
     padding: 5px 15px;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.3s;
     border-radius: 20px;
 }
 
 .menu-item.ativo{
-    background-color: #1a1a1a;
+    background-color: #0f0f0f;
 }
 
 .menu-item:hover{
@@ -98,7 +94,7 @@ hr {
     text-transform: uppercase;
 }
 
-#pesquisar-receita{
+.pesquisar-receita{
     color: white;
     background-color: #3b3b3b;
     border: 1px solid #8a8a8a;
@@ -109,53 +105,47 @@ hr {
     transition: 0.3s;
 }
 
-#pesquisar-receita:focus{
+.pesquisar-receita:focus{
     background-color: #2e2e2e;
     width: 500px;
     outline: #3c80ff solid 2px;
 }
 
-#pesquisar-receita:hover{
+.pesquisar-receita:hover{
     background-color: #2e2e2e;
 }
 
 /* BLOCO DE ECONOMIZE TEMPO E DINHEIRO*/
-
-.economize-tempo-e-dinheiro{
-    background-color: #ffffff;
-}
-.economize-tempo-e-dinheiro h1{
+.bloco-de-vantagens h1{
     color: #FF725E;
     text-align: center;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 20px 0px;
+    padding: 15px 0px;
     font-size: 40px; 
 }
 
 .container-vantagens{
     display: flex;
-    align-items: center;
-    margin: 0px auto;
-    margin-bottom: 40px;
+    margin: 20px 0px;
 }
 
-.bloco-vantagens img{
+.itens-vantagens img{
     width: 200px;
     margin: 0px auto;
     display: block;
 }
 
-.bloco-vantagens h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+.itens-vantagens h3{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #FF725E;
     font-size: 30px;
     text-align: center;
 }
 
-.bloco-vantagens p{
-    font: 20px 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+.itens-vantagens p{
+    font: 20px 'Red Hat Display', Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px 50px;
 }
@@ -180,10 +170,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 15px;
+    padding: 15px;
 }   
 
 .bloco-de-comidas{
+    background-color: #a7a7a7;
     width: 300px;
     margin: 30px auto;
     transition: 0.3s;
@@ -193,7 +184,6 @@ hr {
     object-fit: cover;
     width: 100%;
     height: 250px;
-    border-radius: 5px 5px 0px 0px;
     display: block;
 }
 
@@ -209,28 +199,28 @@ hr {
     object-position: bottom;
 }
 
+.bloco-de-comidas{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+}
 
 .bloco-de-comidas h2{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    padding: 10px 0px;
-    background-color: #0e0e0e;
-    color: #ebebeb;
-    text-transform: uppercase;
     font-size: 20px;
+    padding: 13px 0px;
+    background-color: #222222;
+    color: #eeeeee;
+    text-transform: uppercase;
     text-align: center;
 }
 
 .bloco-de-comidas p{
-    background-color: #8a8a8a;
-    padding: 20px 15px;
     font-size: 19px;
+    padding: 20px 15px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .bloco-de-comidas a{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    background-color: #131313;
+    background-color: #222222;
     color: #e7e7e7;
     font-size: 20px;
     padding: 15px 0px;
@@ -238,32 +228,112 @@ hr {
     text-align: center;
     display: block;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.bloco-de-comidas:hover{
-    box-shadow: 10px 5px 3px rgb(32, 32, 32);
+.bloco-de-comidas a:hover{
+    background-color: #c3312c;
 }
+
+.bloco-de-comidas a:active{
+    background-color: #a02621;
+}
+
+/* NAVEGAÇÃO PAGINATION */
 
 .pagination{
-    background-color: transparent;
+    background-color: #1f1f1f;
     text-align: center;
-    padding-bottom: 15px;
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 15px;
 }
 
-.pagination a{
+.pagination label{
     display: inline-block;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #000000;
-    text-decoration: none;
+    color: #f1f1f1;
     padding: 10px 15px;
     margin: 0px 5px;
-    border-radius: 10px;
     transition: 0.5s;
 }
 
-.pagination a:hover{
-    color: #ececec;
-    background-color: #ff3d3d;
+.pagination label:hover{
+    background-color: #c3312c;
+    cursor: pointer;
 }
+
+.pagination input{
+    display: none;
+}
+
+/* MENU DE DOCES */
+
+.menu-de-doces{
+    background-attachment: fixed;
+    background-color: #3a3a3a;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-de-doces h1{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    background-color: #202020;
+    color: #ececec;
+    padding: 20px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container-doces{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.itens-doce {
+    align-items: center;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+
+.itens-doce img{
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.itens-doce h2{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: #ebebeb;
+    color: #161616;
+    padding: 5px 0px;
+    position: relative;
+    top: 45px;
+    text-align: center;
+    box-shadow: 2px 2px 3px black;
+}
+
+.itens-doce p{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #181818;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    width: 200px;
+    padding: 10px 15px;
+    bottom: 70px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
 
