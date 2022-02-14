@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
+
 /* HEADER */
 .logo a{
     font-size: 40px;
@@ -162,7 +163,7 @@ hr {
     background-color: #202020;
     color: #ececec;
     padding: 20px 0px;
-    font-size: 40px;
+    font-size: 33px;
     text-align: center;
 }
 
@@ -283,7 +284,7 @@ hr {
     background-color: #202020;
     color: #ececec;
     padding: 20px 0px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -292,11 +293,11 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 10px 20px;
+    padding: 0px 20px;
 }
 
 .itens-doce {
-    align-items: center;
+    
     margin: 0px auto;
     border-radius: 20px;
 }
@@ -317,7 +318,6 @@ hr {
     position: relative;
     top: 45px;
     text-align: center;
-    box-shadow: 2px 2px 3px black;
 }
 
 .itens-doce p{
@@ -332,6 +332,127 @@ hr {
     bottom: 70px;
     border-radius: 0px 10px 10px 0px;
 }
+
+/* QUEM SOMOS */
+
+.bloco-quem-somos{
+    background-color: #dbdbdb;
+}
+
+.bloco-quem-somos h1{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    background-color: #202020;
+    color: #ececec;
+    padding: 15px 0px;
+    position: relative;
+    bottom: 20px;
+    font-size: 33px;
+    text-align: center;
+}
+
+.container-pessoas{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.bloco-pessoas img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.bloco-pessoas:nth-child(3) img{
+    object-position: top;
+}
+
+.bloco-pessoas h2{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #202020;
+    text-shadow: 2px 2px 4px #e0e0e057;
+}
+
+.bloco-pessoas p{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Footer */
+
+.conteudo-principal{
+    background-color: #1d1a1a;
+    color: #eeeeee;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    padding: 30px 0px;
+}
+
+.container img{
+    width: 24px;
+}
+
+.redes-sociais a{
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.box{
+    margin: 0px 20px;
+    display: block;
+}
+
+.box h2{
+    font-size: 20px;
+}
+
+.box hr{
+    width: 127px;
+    margin: 10px 0px;
+}
+
+.div-contato{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.icons{
+    display: inline-flex;
+    padding: 10px 0px;
+}
+
+.box .icons img {
+    margin-right: 15px;
+}
+
+div .content{
+    padding: 5px 0px;
+}
+
+.content button{
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #ff3838;
+    padding: 10px 0px;
+    margin: 10px auto;
+    width: 200px;
+}
+
+
+
+
 
 
 
