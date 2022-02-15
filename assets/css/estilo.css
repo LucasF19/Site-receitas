@@ -9,7 +9,7 @@
     background-position: center;
 }
 
-.logo a{
+.logo {
     font-size: 40px;
     color: #f3f3f3;
     font-weight: bold;
@@ -112,13 +112,13 @@ hr {
     background-color: #2e2e2e;
 }
 
-/* BLOCO DE ECONOMIZE TEMPO E DINHEIRO*/
+/* BLOCO VANTAGENS*/
 
 .bloco-de-vantagens{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
-.bloco-de-vantagens h1{
+.bloco-de-vantagens h2{
     color: #FF725E;
     text-align: center;
     font-weight: bold;
@@ -155,7 +155,7 @@ hr {
     background-color: #2c2c2c;
 }
 
-.menu-de-comidas h1{
+.menu-de-comidas h2{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-color: #202020;
@@ -202,7 +202,7 @@ hr {
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
-.bloco-de-comidas h2{
+.bloco-de-comidas h3{
     font-size: 20px;
     padding: 13px 0px;
     background-color: #222222;
@@ -277,7 +277,7 @@ hr {
     height: 100%;
 }
 
-.menu-de-doces h1{
+.menu-de-doces h2{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #202020;
     color: #ececec;
@@ -307,7 +307,7 @@ hr {
     border-radius: 5px;
 }
 
-.itens-doce h2{
+.itens-doce h3{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 25px;
     background-color: #ebebeb;
@@ -337,7 +337,7 @@ hr {
     background-color: #dbdbdb;
 }
 
-.bloco-quem-somos h1{
+.bloco-quem-somos h2{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #202020;
     color: #ececec;
@@ -368,7 +368,7 @@ hr {
     object-position: top;
 }
 
-.bloco-pessoas h2{
+.bloco-pessoas h3{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     padding-top: 10px;
     text-align: center;
