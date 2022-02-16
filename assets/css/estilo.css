@@ -3,36 +3,47 @@
 /* HEADER */
 
 .fundo-principal{
+    background: url("../img/fundo/pexels-fidel-hajj-2814828.jpg") no-repeat center / cover;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    background-image: url("../img/fundo/pexels-fidel-hajj-2814828.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .logo {
-    font-size: 40px;
     color: #f3f3f3;
+    font-size: 40px;
     font-weight: bold;
-    text-decoration: none;
     margin: 0px 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    opacity: 50%;
 }
 
 .cabecalho{
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 1%;
+    padding: 10px 5px;
 }
 
 .menu-item{
-    font-size: 20px;
-    color: #f3f3f3;
-    margin-right: 5px;
-    padding: 5px 15px;
-    display: inline-block;
-    transition: 0.3s;
     border-radius: 20px;
+    color: #f3f3f3;
+    display: inline-block;
+    font-size: 21px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.menu-listas{
+    display: flex;
+}
+
+.menu-listas a{
+    text-decoration: none;
 }
 
 .menu-item.ativo{
@@ -46,7 +57,6 @@
 
 .menu-item:active, .ativo:active{
     background-color: #6d6d6d;
-    transition: 0s;
 }
 
 .menu-item{
@@ -54,19 +64,17 @@
 }
 
 /* FUNDO */
-
 .Imagem-comida-fundo{
     display: block;
-    width: 50%;
+    width: 450px;
     margin: 0px auto;
 }
 
 /* DIV COR SOLIDA ESQUERDA*/
 
 .fundo-metade{
-    width: 60%;
-    height: 100%;
     background-color: #202020;
+    width: 60%;
 }
 
 .principal-centralizado{
@@ -75,9 +83,9 @@
 
 .titulo-subtitulo{
     color: #e4e4e4;
-    text-align: center;
     font-weight: bold;
     font-size: 60px;
+    text-align: center;
 }
 
 hr {
@@ -92,13 +100,13 @@ hr {
 }
 
 .pesquisar-receita{
-    font-size: 18px;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-    border: 1px solid #8a8a8a;
-    width: 300px;
     background-color: #3b3b3b;
+    border: 1px solid #8a8a8a;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    padding: 8px 20px;
+    width: 300px;
     transition: 0.3s;
 }
 
@@ -120,10 +128,10 @@ hr {
 
 .bloco-de-vantagens h2{
     color: #FF725E;
-    text-align: center;
     font-weight: bold;
-    padding: 15px 0px;
     font-size: 40px; 
+    padding: 15px 0px;
+    text-align: center;
 }
 
 .container-vantagens{
@@ -132,22 +140,22 @@ hr {
 }
 
 .itens-vantagens img{
-    width: 200px;
-    margin: 0px auto;
     display: block;
+    margin: 0px auto;
+    width: 200px;
 }
 
 .itens-vantagens h3{
-    font-weight: bold;
     color: #FF725E;
+    font-weight: bold;
     font-size: 30px;
     text-align: center;
 }
 
 .itens-vantagens p{
     font-size: 20px;
-    text-align: center;
     padding: 20px 50px;
+    text-align: center;
 }
 
 /* Food Section */
@@ -156,34 +164,36 @@ hr {
 }
 
 .menu-de-comidas h2{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    font-weight: bold;
     background-color: #202020;
     color: #ececec;
-    padding: 15px 0px;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 40px;
+    font-weight: bold;
+    padding: 15px 0px;
     text-align: center;
 }
 
 .container-comidas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
 }   
 
 .bloco-de-comidas{
     background-color: #a7a7a7;
-    width: 300px;
-    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
     transition: 0.3s;
+    width: 300px;
 }
 
 .bloco-de-comidas img{
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
     display: block;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
 }
 
 .bloco-de-comidas:nth-child(1) img{
@@ -203,29 +213,29 @@ hr {
 }
 
 .bloco-de-comidas h3{
-    font-size: 20px;
-    padding: 13px 0px;
     background-color: #222222;
     color: #eeeeee;
-    text-transform: uppercase;
+    font-size: 20px;
+    padding: 13px 0px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .bloco-de-comidas p{
     font-size: 19px;
+    letter-spacing: 0.5px;
     padding: 20px 15px;
     text-align: center;
-    letter-spacing: 0.5px;
 }
 
 .bloco-de-comidas a{
     background-color: #222222;
     color: #e7e7e7;
-    font-size: 20px;
-    padding: 15px 0px;
-    font-weight: bold;
-    text-align: center;
     display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+    text-align: center;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -235,33 +245,33 @@ hr {
 }
 
 .bloco-de-comidas a:active{
-    background-color: #a02621;
+    background-color: #861d1a;
 }
 
 /* NAVEGAÇÃO PAGINATION */
 
 .pagination{
     background-color: #1f1f1f;
-    text-align: center;
-    display: block;
-    width: 50%;
-    margin: 20px auto;
     border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
 }
 
 .pagination label{
+    color: #f1f1f1;
     display: inline-block;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #f1f1f1;
-    padding: 10px 15px;
     margin: 0px 5px;
+    padding: 10px 15px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .pagination label:hover{
     background-color: #c3312c;
-    cursor: pointer;
 }
 
 .pagination input{
@@ -271,18 +281,15 @@ hr {
 /* MENU DE DOCES */
 
 .menu-de-doces{
-    background-attachment: fixed;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #3a3a3a;
-    width: 100%;
-    height: 100%;
 }
 
 .menu-de-doces h2{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #202020;
     color: #ececec;
-    padding: 20px 0px;
     font-size: 30px;
+    padding: 20px 0px;
     text-align: center;
 }
 
@@ -295,20 +302,18 @@ hr {
 }
 
 .itens-doce {
-    
-    margin: 0px auto;
+    padding: 0px 10px;
     border-radius: 20px;
 }
 
 .itens-doce img{
-    object-fit: cover;
-    width: 300px;
-    height: 400px;
     border-radius: 5px;
+    object-fit: cover;
+    height: 400px;
+    width: 300px;
 }
 
 .itens-doce h3{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 25px;
     background-color: #ebebeb;
     color: #161616;
@@ -319,7 +324,6 @@ hr {
 }
 
 .itens-doce p{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     color: white;
     background-color: #181818;
     font-size: 20px;
@@ -329,16 +333,24 @@ hr {
     padding: 10px 15px;
     bottom: 70px;
     border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.itens-doce p:hover{
+    background-color: #c3312c;
+}
+
+
+    
 /* QUEM SOMOS */
 
 .bloco-quem-somos{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #dbdbdb;
 }
 
 .bloco-quem-somos h2{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #202020;
     color: #ececec;
     padding: 15px 0px;
@@ -349,7 +361,7 @@ hr {
 .container-pessoas{
     display: flex;
     justify-content: space-around;
-    padding: 20px 0px;
+    padding: 50px 0px;
     flex-wrap: wrap;
 }
 
@@ -364,33 +376,32 @@ hr {
     object-fit: cover;
 }
 
-.bloco-pessoas:nth-child(3) img{
+.bloco-pessoas:last-child img{
     object-position: top;
 }
 
 .bloco-pessoas h3{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    color: #202020;
+    font-size: 22px;
     padding-top: 10px;
     text-align: center;
-    font-size: 22px;
-    color: #202020;
     text-shadow: 2px 2px 4px #e0e0e057;
 }
 
 .bloco-pessoas p{
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font: 20px ;
     color: #3a3a3a;
-    text-align: center;
-    padding: 5px;
     font-size: 20px;
+    padding: 5px;
+    text-align: center;
 }
 
-/* Footer */
+/* Footer */    
 
-.conteudo-principal{
+.conteudo-rodape{
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: #1d1a1a;
     color: #eeeeee;
-    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -399,12 +410,15 @@ hr {
 }
 
 .container img{
-    width: 24px;
+    width: 22px;
 }
 
 .redes-sociais a{
+    border-radius: 100%;
+    background-color: #292929;
     display: inline-block;
-    padding: 5px 5px;
+    margin: 10px 5px 10px 0px;
+    padding: 5px;
 }
 
 .box{
@@ -419,6 +433,7 @@ hr {
 .box hr{
     width: 127px;
     margin: 10px 0px;
+    border-color: #ff3838;
 }
 
 .div-contato{
