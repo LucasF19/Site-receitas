@@ -474,29 +474,139 @@ div .content{
 }
 
 /* RESPONSIVO */
-@media screen and (max-width: 994px){
-    .cabecalho{
-        background-color: rgb(19, 19, 19);
-        transition: 0s;
-    }
-    
+@media screen and (max-width: 1000px){
     .logo{
-        
+        display: none;
+    }
+
+    .cabecalho{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    .bloco-de-vantagens{
+        margin: 15px;
+    }
+
+    .menu-listas{
+        font-size: 30px;
+    }
+
+    .itens-vantagens{
+        margin: 0px;
+    }
+
+    .itens-vantagens p{
+        font-size: 2vh;
+        padding: 10px;
+    }
+
+    .container{
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px){ /* Celulares */
+    .cabecalho{
+        background-color: #131313;
+        transition: 0s;
+        justify-content: center;
     }
 
     .menu{
         display: flex;
     }
 
-    .fundo-principal{
-        background: none;
+    .menu-item{
+        padding: 10px 5px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .Imagem-comida-fundo{
         width: 100%;
+    }
+
+    .fundo-principal{
+        width: 100%;
+    }
+
+    .titulo-subtitulo{
+        padding: 20px;
+    }
+
+    .titulo-subtitulo h1{
+        font-size: 45px;
+        text-shadow: 3px 3px 5px black;
+    }
+
+    .titulo-subtitulo h2{
+        font-weight: bold;
+        text-shadow: 3px 3px 5px black;
+        font-size: 25px;
+    }
+
+    .principal-centralizado{
+        padding: 0px;
+        width: 100%;
+        background-color: #000000a6;
+    }
+
+    .pagination{
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    hr{
+        width: 30vh;
+        margin: 10px auto;
+    }
+
+    .pesquisar-receita{
+        margin: 20px auto;
+        transition: 0;
+    }
+
+    .pesquisar-receita:hover{
+        width: 300px;
     }
 
     .fundo-metade{
         width: 100%;
+        background-color: #0f0f0f1e;
     }
-}
+
+    .itens-vantagens{
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .itens-vantagens p{
+        font-size: 22px;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .container-vantagens{
+        display: block;
+    }
+
+    .container{
+        display: block;
+        padding: 20px;
+    }
+
+    .container-pessoas{
+        padding: 0;
+    }
+
+    .bloco-pessoas{
+        padding: 20px;
+    }
+} 
 
 
 
