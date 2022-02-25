@@ -183,6 +183,7 @@ hr {
 .container-comidas{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     padding: 15px;
 }   
@@ -197,10 +198,8 @@ hr {
 }
 
 .bloco-de-comidas img{
-    display: block;
     object-fit: cover;
     height: 250px;
-    width: 100%;
 }
 
 .bloco-de-comidas:nth-child(1) img{
