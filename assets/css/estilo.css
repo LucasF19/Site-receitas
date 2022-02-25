@@ -193,8 +193,8 @@ hr {
     display: flex;
     flex-direction: column;
     margin: 30px 0px;
-    transition: 0.3s;
     width: 300px;
+    transition: 0.3s;
 }
 
 .bloco-de-comidas img{
@@ -619,12 +619,12 @@ div .content{
 
     .itens-vantagens{
         align-items: center;
-        margin: 0px auto;
+        margin: 40px auto;
     }
 
     .itens-vantagens p{
-        font-size: 20px;
-        padding: 10px 0px;
+        font-size: 21px;
+        padding: 5px 20px;
         text-align: center;
     }
 
