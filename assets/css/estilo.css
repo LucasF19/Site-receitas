@@ -28,12 +28,12 @@
     padding: 10px 5px;
 }
 
-.menu-item{
+.menu-item{ 
     border-radius: 20px;
     color: #f3f3f3;
     display: inline-block;
     font-size: 21px;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 5px 15px;
     transition: 0.3s;
 }
@@ -347,8 +347,6 @@ hr {
 .itens-doce p:hover{
     background-color: #c3312c;
 }
-
-
     
 /* QUEM SOMOS */
 
@@ -411,13 +409,13 @@ hr {
     color: #eeeeee;
 }
 
-.container{
+.section-about-us{
     display: flex;
     padding: 30px 0px;
     justify-content: space-evenly;
 }
 
-.container img{
+.section-about-us img{
     width: 22px;
 }
 
@@ -537,13 +535,13 @@ div .content{
     }
 
     /* FOOTER */
-    .container{
+    .section-about-us{
         padding: 30px;
     }
 }
 
 
-@media screen and (max-width: 680px){       /* Celulares */
+@media screen and (max-width: 680px){
     /* INICIO */
     .Imagem-comida-fundo{
         width: 350px;
@@ -650,7 +648,7 @@ div .content{
     }
 
     /* FOOTER */
-    .container{
+    .section-about-us{
         display: block;
         padding: 20px;
     }
