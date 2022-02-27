@@ -543,7 +543,7 @@ div .content{
 @media screen and (max-width: 680px){
     /* INICIO */
     .Imagem-comida-fundo{
-        width: 350px;
+        width: 300px;
     }
 
     .fundo-metade{
@@ -602,7 +602,7 @@ div .content{
     }
 
     .pesquisar-receita {
-        margin: 20px auto;
+        margin: 20px 0px;
     }
 
     .pesquisar-receita:focus{
