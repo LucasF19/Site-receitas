@@ -62,6 +62,10 @@
     text-transform: lowercase;
 }
 
+.menu-responsivo{
+    display: none;
+}
+
 /* FUNDO */
 .Imagem-comida-fundo{
     display: block;
@@ -215,12 +219,9 @@ hr {
 
 .item-comida{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    transition: 0.3s;
 }
 
 .item-comida:hover{
-    margin: 0;
-    padding: 0;
     flex-grow: 0.3;
 }
 
@@ -480,22 +481,33 @@ div .content{
 
 /* RESPONSIVO */
 @media screen and (max-width: 1000px){
-    
     /* INÍCIO TELA PRINCIPAL */
+
+    .Imagem-comida-fundo{
+        width: 75%;
+        transition: 0.5s;
+    }
+
     .fundo-principal{
         transition: 0.5s;
     }
 
     .cabecalho{
-        justify-content: center;
-    }
-
-    .logo{
-        display: none;
+        justify-content: space-between;
+        padding: 10px 15px;
     }
 
     .menu-listas{
         font-size: 30px;
+    }
+
+    .menu-listas-item{
+        display: none;
+    }
+    
+    .menu-responsivo{
+        display: block;
+        width: 1.2em;
     }
 
     .bloco-de-vantagens{
@@ -507,7 +519,7 @@ div .content{
     }
 
     .titulo-subtitulo h1{
-        font-size: 45px;
+        font-size: 3rem;
     }
 
     hr{
@@ -516,11 +528,6 @@ div .content{
 
     .titulo-subtitulo h2{
         font-size: 22px;
-    }
-
-    .Imagem-comida-fundo{
-       width: 350px;
-       transition: 0.5s;
     }
 
 
@@ -543,7 +550,7 @@ div .content{
         padding: 30px;
     }
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 660px){
     /* INICIO */
     .Imagem-comida-fundo{
         width: 300px;
@@ -561,13 +568,9 @@ div .content{
     
     .cabecalho{
         background-color: #131313;
-        justify-content: center;
-        transition: 0s;
-        padding: 0;
-    }
+        justify-content: space-between;
+        padding: 0.5em 2em;
 
-    .logo{
-        display: none;
     }
 
     .menu{
@@ -660,7 +663,17 @@ div .content{
         display: block;
         padding: 20px;
     }
-} 
+}
+
+@media screen and (max-width: 325px){
+    .pesquisar-receita{
+        width: 100%;
+    }
+
+    .titulo-subtitulo{
+        padding: 5px;
+    }
+}
 
 
 
