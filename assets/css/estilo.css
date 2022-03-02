@@ -1,13 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
-/* HEADER */
+:root{
+    --branco-fosco: #f3f3f3;
+    --preto: #141414;
+    --preto-transparente: #0f0f0fb6;
+    --preto-cinzento: #202020;
+    --cinza-claro: #6d6d6d;
+    --cinza-escuro: #3b3b3b;
+    
 
+    --border-receitas: #8a8a8a;
+    --focus-background: #2e2e2e;
+    --focus-outline: #3c80ff;
+
+    --color-vantangens: #FF725E;
+
+    --menu-comidas-background: #2c2c2c;
+    --card-line-color: #1f1f1f;
+    --card-background: #a5a5a5;
+    --card-text-color: #e0e0e0; 
+    --hover-food: #c3312c;
+    --active: #9b2727;
+
+    --menu-doces-background: #2c2c2c;
+
+    --background-quem-somos: #dddddd;
+}
+
+/* HEADER */
 .main-background{
     background: url("../img/fundo/pexels-fidel-hajj-2814828.jpg") no-repeat center / cover;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
 .logo {
-    color: #f3f3f3;
+    color: var(--branco-fosco);
     font-size: 40px;
     font-weight: bold;
     margin: 0px 10px;
@@ -29,7 +55,7 @@
 
 .menu-listas-item{ 
     border-radius: 20px;
-    color: #f3f3f3;
+    color: var(--branco-fosco);
     display: inline-block;
     font-size: 21px;
     margin-right: 5px;
@@ -46,16 +72,16 @@
 }
 
 .menu-listas-item.ativo{
-    background-color: #0f0f0f;
+    background-color: var(--preto);
 }
 
 .menu-listas-item:hover{
-    color: #3b3b3b;
-    background-color: #e4e4e4;
+    color: var(--cinza-escuro);
+    background-color: var(--branco-fosco);
 }
 
 .menu-listas-item:active, .ativo:active{
-    background-color: #6d6d6d;
+    background-color: var(--cinza-claro);
 }
 
 .menu-listas-item{
@@ -76,7 +102,7 @@
 /* FUNDO PRINCIPAL METADE*/
 
 .fundo-metade{
-    background-color: #202020;
+    background-color: var(--preto-cinzento);
     width: 60%;
 }
 
@@ -85,7 +111,7 @@
 }
 
 .titulo-subtitulo{
-    color: #e4e4e4;
+    color: var(--branco-fosco);
     font-weight: bold;
     font-size: 60px;
     text-align: center;
@@ -103,10 +129,10 @@ hr {
 }
 
 .pesquisar-receita{
-    background-color: #3b3b3b;
-    border: 1px solid #8a8a8a;
+    background-color: var(--cinza-escuro);
+    border: 1px solid var(--border-receitas);
+    color: var(--branco-fosco);
     border-radius: 20px;
-    color: white;
     font-size: 18px;
     padding: 8px 20px;
     width: 300px;
@@ -114,13 +140,13 @@ hr {
 }
 
 .pesquisar-receita:focus{
-    background-color: #2e2e2e;
+    background-color: var(--focus-background);
     width: 500px;
-    outline: #3c80ff solid 2px;
+    outline: 2px solid var(--focus-outline);
 }
 
 .pesquisar-receita:hover{
-    background-color: #2e2e2e;
+    background-color: var(--focus-background);
 }
 
 /* BLOCO VANTAGENS*/
@@ -130,7 +156,7 @@ hr {
 }
 
 .bloco-de-vantagens h2{
-    color: #FF725E;
+    color: var(--color-vantangens);
     font-weight: bold;
     font-size: 40px; 
     padding: 15px 0px;
@@ -156,7 +182,7 @@ hr {
 }
 
 .itens-vantagens h3{
-    color: #FF725E;
+    color: var(--color-vantangens);
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -170,12 +196,12 @@ hr {
 
 /* COMIDAS */
 .menu-de-comidas{
-    background-color: #2c2c2c;
+    background-color: var(--menu-comidas-background);
 }
 
 .menu-de-comidas h2{
-    background-color: #202020;
-    color: #ececec;
+    background-color: var(--preto-cinzento);
+    color: var(--branco-fosco);
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -192,7 +218,7 @@ hr {
 }   
 
 .item-comida{
-    background-color: #a7a7a7;
+    background-color: var(--card-background);
     display: flex;
     flex-direction: column;
     margin: 30px 0px;
@@ -226,8 +252,8 @@ hr {
 }
 
 .item-comida h3{
-    background-color: #222222;
-    color: #eeeeee;
+    background-color: var(--card-line-color);
+    color: var(--card-text-color);
     font-size: 20px;
     padding: 13px 0px;
     text-align: center;
@@ -242,8 +268,8 @@ hr {
 }
 
 .item-comida a{
-    background-color: #222222;
-    color: #e7e7e7;
+    background-color: var(--card-line-color);
+    color: var(--card-text-color);
     display: block;
     font-size: 20px;
     font-weight: bold;
@@ -254,17 +280,17 @@ hr {
 }
 
 .item-comida a:hover{
-    background-color: #c3312c;
+    background-color: var(--hover-food);
 }
 
 .item-comida a:active{
-    background-color: #861d1a;
+    background-color: var(--active);
 }
 
 /* NAVEGAÇÃO PAGINATION */
 
 .pagination{
-    background-color: #1f1f1f;
+    background-color: var(--card-line-color);
     border-radius: 15px;
     display: block;
     margin: 20px auto;
@@ -273,7 +299,7 @@ hr {
 }
 
 .pagination label{
-    color: #f1f1f1;
+    color: var(--branco-fosco);
     display: inline-block;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -284,7 +310,7 @@ hr {
 }
 
 .pagination label:hover{
-    background-color: #c3312c;
+    background-color: var(--hover-food);
 }
 
 .pagination input{
@@ -295,12 +321,12 @@ hr {
 
 .menu-de-doces{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    background-color: #3a3a3a;
+    background-color: var(--menu-doces-background);
 }
 
 .menu-de-doces h2{
-    background-color: #202020;
-    color: #ececec;
+    background-color: var(--preto-cinzento);
+    color: var(--branco-fosco);
     font-size: 30px;
     padding: 20px 0px;
     text-align: center;
@@ -328,8 +354,8 @@ hr {
 
 .item-doce h3{
     font-size: 25px;
-    background-color: #ebebeb;
-    color: #161616;
+    background-color: var(--branco-fosco);
+    color: var(--card-line-color);
     padding: 5px 0px;
     position: relative;
     top: 45px;
@@ -337,8 +363,8 @@ hr {
 }
 
 .item-doce p{
-    color: white;
-    background-color: #181818;
+    color: var(--branco-fosco);
+    background-color: var(--card-line-color);
     font-size: 20px;
     text-align: center;
     position: relative;
@@ -351,19 +377,19 @@ hr {
 }
 
 .item-doce p:hover{
-    background-color: #c3312c;
+    background-color: var(--hover-food);
 }
     
 /* QUEM SOMOS */
 
 .bloco-quem-somos{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    background-color: #dbdbdb;
+    background-color: var(--background-quem-somos);
 }
 
 .bloco-quem-somos h2{
-    background-color: #202020;
-    color: #ececec;
+    background-color: var(--preto-cinzento);
+    color: var(--branco-fosco);
     padding: 15px 0px;
     font-size: 33px;
     text-align: center;
@@ -392,16 +418,15 @@ hr {
 }
 
 .item-pessoa h3{
-    color: #202020;
+    color: var(--preto-cinzento);
     font-size: 22px;
     padding-top: 10px;
     text-align: center;
-    text-shadow: 2px 2px 4px #e0e0e057;
 }
 
 .item-pessoa p{
     font: 20px ;
-    color: #3a3a3a;
+    color: var(--cinza-claro);
     font-size: 20px;
     padding: 5px;
     text-align: center;
@@ -410,8 +435,8 @@ hr {
 
 .conteudo-rodape{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-    background-color: #1d1a1a;
-    color: #eeeeee;
+    background-color: var(--preto);
+    color: var(--card-text-color);
 }
 
 .section-about-us{
@@ -472,11 +497,16 @@ div .content{
 .content button{
     cursor: pointer;
     border: none;
-    color: white;
-    background-color: #ff3838;
+    color: var(--branco-fosco);
+    background-color: var(--hover-food);
     padding: 10px 0px;
     margin: 10px auto;
     width: 200px;
+    transition: 0.3s;
+}
+
+.content button:hover{
+    background-color: var(--active);
 }
 
 /* RESPONSIVO */
@@ -558,16 +588,16 @@ div .content{
 
     .fundo-metade{
         width: 100%;
-        background-color: #0f0f0f1e;
+        background-color: var(--preto-transparente);
     }
 
     .principal-centralizado{
         padding: 0px;
-        background-color: #292929a6;
+        background-color: var(--preto-transparente);
     }
     
     .cabecalho{
-        background-color: #131313;
+        background-color: var(--preto);
         justify-content: space-between;
         padding: 0.5em 2em;
 
@@ -593,7 +623,7 @@ div .content{
 
     .titulo-subtitulo h1{
         font-size: 40px;
-        text-shadow: 3px 3px 5px black;
+        text-shadow: 3px 3px 5px var(--preto);
     }
 
     hr {
@@ -603,7 +633,7 @@ div .content{
 
     .titulo-subtitulo h2{
         font-weight: bold;
-        text-shadow: 3px 3px 5px black;
+        text-shadow: 3px 3px 5px var(--preto);
         font-size: 23px;
     }
 
