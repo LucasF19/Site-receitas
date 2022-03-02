@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
-
 /* HEADER */
 
 .main-background{
@@ -216,6 +215,13 @@ hr {
 
 .item-comida{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+.item-comida:hover{
+    margin: 0;
+    padding: 0;
+    flex-grow: 0.3;
 }
 
 .item-comida h3{
@@ -493,7 +499,7 @@ div .content{
     }
 
     .bloco-de-vantagens{
-        margin: 20px;
+        margin: 15px 0px;
     }
 
     .menu-listas a{
@@ -537,8 +543,6 @@ div .content{
         padding: 30px;
     }
 }
-
-
 @media screen and (max-width: 680px){
     /* INICIO */
     .Imagem-comida-fundo{
@@ -607,11 +611,17 @@ div .content{
     .pesquisar-receita:focus{
         width: 300px;
     }
+    /* CONTAINER COMIDAS */
+    .container-comidas{
+        padding: 0px;
+    }
+
+    /* CONTAINER DOCES */
+    .container-doces{
+        padding: 0px;
+    }
 
     /* BLOCO DE VANTAGENS */
-    .bloco-de-vantagens h2{
-        font-size: 35px;
-    }
     .pagination{
         display: none;
     }
