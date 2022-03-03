@@ -32,7 +32,7 @@
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
-.background__cabecalho-logo {
+.background__logo {
     color: var(--branco-fosco);
     font-size: 40px;
     font-weight: bold;
@@ -41,7 +41,7 @@
     transition: 0.3s;
 }
 
-.background__cabecalho-logo:hover{
+.background__logo:hover{
     opacity: 50%;
 }
 
@@ -63,11 +63,11 @@
     transition: 0.3s;
 }
 
-.background__cabecalho-listas ul{
+.background__listas ul{
     display: flex;
 }
 
-.background__cabecalho-listas a{
+.background__listas a{
     text-decoration: none;
 }
 
@@ -578,7 +578,7 @@ div .content{
         padding: 10px 15px;
     }
 
-    .background__cabecalho-listas{
+    .background__listas{
         font-size: 30px;
     }
 
@@ -595,7 +595,7 @@ div .content{
         margin: 15px 0px;
     }
 
-    .background__cabecalho-listas a{
+    .background__listas a{
         font-size: 19px;
     }
 
@@ -658,7 +658,7 @@ div .content{
         display: flex;
     }
     
-    .background__cabecalho-listas a{
+    .background__listas a{
         font-size: 17px;
         border-radius: 0px;
         margin-right: 1px;
