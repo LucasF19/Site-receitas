@@ -27,12 +27,12 @@
 }
 
 /* HEADER */
-.main-background{
+.background{
     background: url("../img/fundo/pexels-fidel-hajj-2814828.jpg") no-repeat center / cover;
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
-.logo {
+.background__cabecalho-logo {
     color: var(--branco-fosco);
     font-size: 40px;
     font-weight: bold;
@@ -41,11 +41,11 @@
     transition: 0.3s;
 }
 
-.logo:hover{
+.background__cabecalho-logo:hover{
     opacity: 50%;
 }
 
-.cabecalho{
+.background-cabecalho{
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@
     padding: 10px 5px;
 }
 
-.menu-listas-item{ 
+.listas__item{ 
     border-radius: 20px;
     color: var(--branco-fosco);
     display: inline-block;
@@ -63,28 +63,28 @@
     transition: 0.3s;
 }
 
-.menu-listas{
+.background__cabecalho-listas ul{
     display: flex;
 }
 
-.menu-listas a{
+.background__cabecalho-listas a{
     text-decoration: none;
 }
 
-.menu-listas-item.ativo{
+.listas__item.ativo{
     background-color: var(--preto);
 }
 
-.menu-listas-item:hover{
+.listas__item:hover{
     color: var(--cinza-escuro);
     background-color: var(--branco-fosco);
 }
 
-.menu-listas-item:active, .ativo:active{
+.listas__item:active, .ativo:active{
     background-color: var(--cinza-claro);
 }
 
-.menu-listas-item{
+.listas__item{
     text-transform: lowercase;
 }
 
@@ -101,7 +101,7 @@
 
 /* FUNDO PRINCIPAL METADE*/
 
-.fundo-metade{
+.background__lado__esquerdo{
     background-color: var(--preto-cinzento);
     width: 60%;
 }
@@ -573,16 +573,16 @@ div .content{
         transition: 0.5s;
     }
 
-    .cabecalho{
+    .background-cabecalho{
         justify-content: space-between;
         padding: 10px 15px;
     }
 
-    .menu-listas{
+    .background__cabecalho-listas{
         font-size: 30px;
     }
 
-    .menu-listas-item{
+    .listas__item{
         display: none;
     }
     
@@ -595,7 +595,7 @@ div .content{
         margin: 15px 0px;
     }
 
-    .menu-listas a{
+    .background__cabecalho-listas a{
         font-size: 19px;
     }
 
@@ -637,7 +637,7 @@ div .content{
         width: 300px;
     }
 
-    .fundo-metade{
+    .background__lado__esquerdo{
         width: 100%;
         background-color: var(--preto-transparente);
     }
@@ -647,7 +647,7 @@ div .content{
         background-color: var(--preto-transparente);
     }
     
-    .cabecalho{
+    .background-cabecalho{
         background-color: var(--preto);
         justify-content: space-between;
         padding: 0.5em 2em;
@@ -658,13 +658,13 @@ div .content{
         display: flex;
     }
     
-    .menu-listas a{
+    .background__cabecalho-listas a{
         font-size: 17px;
         border-radius: 0px;
         margin-right: 1px;
     }
 
-    .menu-listas-item{
+    .listas__item{
         padding: 10px;
     }
 
