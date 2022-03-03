@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 :root{
-    --branco-fosco: #f3f3f3;
+    --branco-fosco: #e9e9e9;
     --preto: #141414;
     --preto-transparente: #0f0f0fb6;
     --preto-cinzento: #202020;
@@ -19,7 +19,7 @@
     --card-background: #a5a5a5;
     --card-text-color: #e0e0e0; 
     --hover-food: #c3312c;
-    --active: #9b2727;
+    --active: #831a1a;
 
     --menu-doces-background: #2c2c2c;
 
@@ -221,9 +221,13 @@ hr {
     background-color: var(--card-background);
     display: flex;
     flex-direction: column;
-    margin: 30px 0px;
+    margin: 10px;
     width: 300px;
-    transition: 0.3s;
+    transition: 0.5s;
+}
+
+.item-comida:hover{
+    flex-grow: 0.5;
 }
 
 .item-comida img{
@@ -245,10 +249,6 @@ hr {
 
 .item-comida{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
-}
-
-.item-comida:hover{
-    flex-grow: 0.3;
 }
 
 .item-comida h3{
@@ -335,43 +335,94 @@ hr {
 .container-doces{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
-    padding: 0px 20px;
+    align-items: center;
+    overflow: hidden;
 }
 
 .item-doce {
-    padding: 0px 10px;
-    border-radius: 20px;
+    position: relative;
+    margin: 20px 0px;
+    background: #111111;
 }
 
-.item-doce img{
-    border-radius: 5px;
-    object-fit: cover;
+.Imagem-item-doce{
+    display: block;
     height: 400px;
+    object-fit: cover;
     width: 300px;
+    transition: 0.5s;
+}
+
+.Imagem-item-doce:hover{
+    opacity: 0;
+}
+
+.receita-overflow{
+    opacity: 0;
+    position: absolute;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.receita-overflow:hover{
+    opacity: 1;
+}
+
+.imagem-overflow{
+    object-fit: cover;
+    height: 200px;
+}
+
+.receita-overflow ul{
+    color: var(--card-text-color);
+    margin-left: 20px;
+    font-size: 19px;
+    padding-left: 10px;
+    list-style: disc;
+}
+
+.lista-ingredientes li{
+    margin-bottom: 10px;
+}
+
+.receita-overflow a{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: var(--hover-food);
+    margin: 10px auto;
+    width: 250px;
+    padding: 10px;
+    color: #e3e3e3;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.receita-overflow a:hover{
+    background-color: var(--active);
 }
 
 .item-doce h3{
     font-size: 25px;
-    background-color: var(--branco-fosco);
-    color: var(--card-line-color);
-    padding: 5px 0px;
-    position: relative;
-    top: 45px;
+    background-color: var(--preto-cinzento);
+    color: var(--branco-fosco);
+    padding: 10px 0px;
     text-align: center;
 }
 
 .item-doce p{
     color: var(--branco-fosco);
     background-color: var(--card-line-color);
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
-    position: relative;
-    width: 200px;
-    padding: 10px 15px;
-    bottom: 70px;
-    border-radius: 0px 10px 10px 0px;
+    padding: 10px 0px;
     cursor: pointer;
     transition: 0.3s;
 }
