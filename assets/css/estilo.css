@@ -45,7 +45,7 @@
     opacity: 50%;
 }
 
-.background-cabecalho{
+.background__cabecalho{
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@
     padding: 10px 5px;
 }
 
-.listas__item{ 
+.background__listas-item{ 
     border-radius: 20px;
     color: var(--branco-fosco);
     display: inline-block;
@@ -71,20 +71,20 @@
     text-decoration: none;
 }
 
-.listas__item.ativo{
+.background__listas-item.ativo{
     background-color: var(--preto);
 }
 
-.listas__item:hover{
+.background__listas-item:hover{
     color: var(--cinza-escuro);
     background-color: var(--branco-fosco);
 }
 
-.listas__item:active, .ativo:active{
+.background__listas-item:active, .ativo:active{
     background-color: var(--cinza-claro);
 }
 
-.listas__item{
+.background__listas-item{
     text-transform: lowercase;
 }
 
@@ -93,7 +93,7 @@
 }
 
 /* FUNDO */
-.Imagem-comida-fundo{
+.conteudo__imagem{
     display: block;
     width: 450px;
     margin: 0px auto;
@@ -101,16 +101,16 @@
 
 /* FUNDO PRINCIPAL METADE*/
 
-.background__lado__esquerdo{
+.background-esquerdo{
     background-color: var(--preto-cinzento);
     width: 60%;
 }
 
-.principal-centralizado{
+.conteudo{
     padding-bottom: 55px;
 }
 
-.titulo-subtitulo{
+.conteudo-descricao{
     color: var(--branco-fosco);
     font-weight: bold;
     font-size: 60px;
@@ -122,9 +122,15 @@ hr {
     margin: 10px auto;
 }
 
-.titulo-subtitulo h2{
-    font-weight: lighter;
-    font-size: 28px;
+.conteudo-descricao__titulo{
+    font-weight:  500;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.conteudo-descricao__subtitulo{
+    font-weight: 100;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -151,11 +157,11 @@ hr {
 
 /* BLOCO VANTAGENS*/
 
-.bloco-de-vantagens{
+.container-vantagens{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
-.bloco-de-vantagens h2{
+.container-vantagens h2{
     color: var(--color-vantangens);
     font-weight: bold;
     font-size: 40px; 
@@ -163,53 +169,52 @@ hr {
     text-align: center;
 }
 
-.container-vantagens{
+.container-vantagens__bloco{
     display: flex;
     margin: 20px 0px;
 }
 
-.itens-vantagens{
+.container-vantagens__itens{
     align-items: center;
     width: 100%;
     margin: 0 1em;
 }
 
 
-.itens-vantagens img{
+.container-vantagens__itens img{
     display: block;
     margin: 0px auto;
     width: 200px;
 }
 
-.itens-vantagens h3{
+.container-vantagens__itens h3{
     color: var(--color-vantangens);
     font-weight: bold;
     font-size: 30px;
     text-align: center;
 }
 
-.itens-vantagens p{
+.container-vantagens__itens p{
     font-size: 20px;
     padding: 20px 50px;
     text-align: center;
 }
 
 /* COMIDAS */
-.menu-de-comidas{
+.container-comidas{
     background-color: var(--menu-comidas-background);
 }
 
-.menu-de-comidas h2{
+.container-comidas h2{
     background-color: var(--preto-cinzento);
     color: var(--branco-fosco);
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     font-size: 40px;
-    font-weight: bold;
     padding: 15px 0px;
     text-align: center;
 }
 
-.container-comidas{
+.container-comidas__bloco{
     display: flex;
     flex-wrap: wrap;
     align-items: start;
@@ -217,7 +222,7 @@ hr {
     padding: 15px;
 }   
 
-.item-comida{
+.container-comida__itens{
     background-color: var(--card-background);
     display: flex;
     flex-direction: column;
@@ -226,32 +231,32 @@ hr {
     transition: 0.5s;
 }
 
-.item-comida:hover{
+.container-comida__itens:hover{
     flex-grow: 0.5;
 }
 
-.item-comida img{
+.container-comida__itens img{
     object-fit: cover;
     height: 250px;
 }
 
-.item-comida:nth-child(1) img{
+.container-comida__itens:nth-child(1) img{
     object-position: bottom;
 }
 
-.item-comida:nth-child(3) img{
+.container-comida__itens:nth-child(3) img{
     object-position: bottom;
 }
 
-.item-comida:nth-child(5) img{
+.container-comida__itens:nth-child(5) img{
     object-position: bottom;
 }
 
-.item-comida{
+.container-comida__itens{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
 }
 
-.item-comida h3{
+.container-comida__itens h3{
     background-color: var(--card-line-color);
     color: var(--card-text-color);
     font-size: 20px;
@@ -260,14 +265,14 @@ hr {
     text-transform: uppercase;
 }
 
-.item-comida p{
+.container-comida__itens p{
     font-size: 19px;
     letter-spacing: 0.5px;
     padding: 20px 15px;
     text-align: center;
 }
 
-.item-comida a{
+.container-comida__itens a{
     background-color: var(--card-line-color);
     color: var(--card-text-color);
     display: block;
@@ -279,11 +284,11 @@ hr {
     transition: 0.3s;
 }
 
-.item-comida a:hover{
+.container-comida__itens a:hover{
     background-color: var(--hover-food);
 }
 
-.item-comida a:active{
+.container-comida__itens a:active{
     background-color: var(--active);
 }
 
@@ -319,12 +324,12 @@ hr {
 
 /* MENU DE DOCES */
 
-.menu-de-doces{
+.container-doces{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: var(--menu-doces-background);
 }
 
-.menu-de-doces h2{
+.container-doces h2{
     background-color: var(--preto-cinzento);
     color: var(--branco-fosco);
     font-size: 30px;
@@ -332,7 +337,7 @@ hr {
     text-align: center;
 }
 
-.container-doces{
+.container-doces__bloco{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -340,13 +345,13 @@ hr {
     overflow: hidden;
 }
 
-.item-doce {
+.container-doces__itens {
     position: relative;
     margin: 20px 0px;
     background: #111111;
 }
 
-.Imagem-item-doce{
+.container-doces__image{
     display: block;
     height: 400px;
     object-fit: cover;
@@ -354,11 +359,11 @@ hr {
     transition: 0.5s;
 }
 
-.Imagem-item-doce:hover{
+.container-doces__image:hover{
     opacity: 0;
 }
 
-.receita-overflow{
+.overflow-receita{
     opacity: 0;
     position: absolute;
     background: #1a1a1a;
@@ -371,16 +376,16 @@ hr {
     transition: 0.5s;
 }
 
-.receita-overflow:hover{
+.overflow-receita:hover{
     opacity: 1;
 }
 
-.imagem-overflow{
+.overflow-receita__image{
     object-fit: cover;
     height: 200px;
 }
 
-.receita-overflow ul{
+.overflow-receita ul{
     color: var(--card-text-color);
     margin-left: 20px;
     font-size: 19px;
@@ -388,11 +393,11 @@ hr {
     list-style: disc;
 }
 
-.lista-ingredientes li{
+.overflow-receita__listas li{
     margin-bottom: 10px;
 }
 
-.receita-overflow a{
+.overflow-receita a{
     font-size: 20px;
     border-radius: 10px;
     background-color: var(--hover-food);
@@ -405,11 +410,11 @@ hr {
     transition: 0.3s;
 }
 
-.receita-overflow a:hover{
+.overflow-receita a:hover{
     background-color: var(--active);
 }
 
-.item-doce h3{
+.container-doces__itens h3{
     font-size: 25px;
     background-color: var(--preto-cinzento);
     color: var(--branco-fosco);
@@ -417,7 +422,7 @@ hr {
     text-align: center;
 }
 
-.item-doce p{
+.container-doces__itens p{
     color: var(--branco-fosco);
     background-color: var(--card-line-color);
     font-size: 25px;
@@ -427,18 +432,18 @@ hr {
     transition: 0.3s;
 }
 
-.item-doce p:hover{
+.container-doces__itens p:hover{
     background-color: var(--hover-food);
 }
     
 /* QUEM SOMOS */
 
-.bloco-quem-somos{
+.container-sobre{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: var(--background-quem-somos);
 }
 
-.bloco-quem-somos h2{
+.container-sobre h2{
     background-color: var(--preto-cinzento);
     color: var(--branco-fosco);
     padding: 15px 0px;
@@ -446,36 +451,36 @@ hr {
     text-align: center;
 }
 
-.container-pessoas{
+.container-sobre-bloco{
     display: flex;
     justify-content: space-around;
     padding: 50px 0px;
     flex-wrap: wrap;
 }
 
-.item-pessoa{
+.container-sobre-bloco__itens{
     padding: 0px 20px;
 }
 
-.item-pessoa img{
+.container-sobre-bloco__itens img{
     width: 250px;
     height: 250px;
     border-radius: 100%;
     object-fit: cover;
 }
 
-.item-pessoa:last-child img{
+.container-sobre-bloco__itens:last-child img{
     object-position: top;
 }
 
-.item-pessoa h3{
+.container-sobre-bloco__itens h3{
     color: var(--preto-cinzento);
     font-size: 22px;
     padding-top: 10px;
     text-align: center;
 }
 
-.item-pessoa p{
+.container-sobre-bloco__itens p{
     font: 20px ;
     color: var(--cinza-claro);
     font-size: 20px;
@@ -483,20 +488,19 @@ hr {
     text-align: center;
 }
 /* Footer */    
-
-.conteudo-rodape{
+.container-rodape{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: var(--preto);
     color: var(--card-text-color);
 }
 
-.section-about-us{
+.container-rodape-bloco{
     display: flex;
     padding: 30px 0px;
     justify-content: space-evenly;
 }
 
-.section-about-us img{
+.container-rodape-bloco img{
     width: 22px;
 }
 
@@ -511,15 +515,15 @@ hr {
     padding: 5px;
 }
 
-.box{
+.container-rodape-bloco__item{
     margin: 0px auto;
 }
 
-.box h2{
+.container-rodape-bloco__item h2{
     font-size: 20px;
 }
 
-.box hr{
+.container-rodape-bloco__item hr{
     width: 127px;
     margin: 10px 0px;
     border-color: #ff3838;
@@ -536,16 +540,16 @@ hr {
     padding: 10px 0px;
 }
 
-.box .icons img {
+.container-rodape-bloco__item .icons img {
     margin-right: 15px;
     object-fit: contain;
 }
 
-div .content{
+div .container-rodape-bloco__content{
     padding: 5px 0px;
 }
 
-.content button{
+.container-rodape-bloco__content button{
     cursor: pointer;
     border: none;
     color: var(--branco-fosco);
@@ -556,7 +560,7 @@ div .content{
     transition: 0.3s;
 }
 
-.content button:hover{
+.container-rodape-bloco__content button:hover{
     background-color: var(--active);
 }
 
@@ -564,7 +568,7 @@ div .content{
 @media screen and (max-width: 1000px){
     /* INÍCIO TELA PRINCIPAL */
 
-    .Imagem-comida-fundo{
+    .conteudo__imagem{
         width: 75%;
         transition: 0.5s;
     }
@@ -573,7 +577,7 @@ div .content{
         transition: 0.5s;
     }
 
-    .background-cabecalho{
+    .background__cabecalho{
         justify-content: space-between;
         padding: 10px 15px;
     }
@@ -582,7 +586,7 @@ div .content{
         font-size: 30px;
     }
 
-    .listas__item{
+    .background__listas-item{
         display: none;
     }
     
@@ -591,7 +595,7 @@ div .content{
         width: 1.2em;
     }
 
-    .bloco-de-vantagens{
+    .container-vantagens{
         margin: 15px 0px;
     }
 
@@ -599,7 +603,7 @@ div .content{
         font-size: 19px;
     }
 
-    .titulo-subtitulo h1{
+    .conteudo-descricao__titulo{
         font-size: 3rem;
     }
 
@@ -607,47 +611,47 @@ div .content{
         width: 200px;
     }
 
-    .titulo-subtitulo h2{
+    .conteudo-descricao__subtitulo{
         font-size: 22px;
     }
 
 
     /* BLOCO DE VANTAGENS */
-    .itens-vantagens{
+    .container-vantagens__itens{
         margin: 0px;
     }
 
-    .bloco-de-vantagens h2{
+    .container-vantagens h2{
         padding: 0px 0px 10px;
     }
 
-    .itens-vantagens p{
+    .container-vantagens__itens p{
         font-size: 20px;
         padding: 10px;
     }
 
     /* FOOTER */
-    .section-about-us{
+    .container-rodape__bloco{
         padding: 30px;
     }
 }
 @media screen and (max-width: 660px){
     /* INICIO */
-    .Imagem-comida-fundo{
+    .conteudo__imagem{
         width: 300px;
     }
 
-    .background__lado__esquerdo{
+    .background-esquerdo{
         width: 100%;
         background-color: var(--preto-transparente);
     }
 
-    .principal-centralizado{
+    .conteudo{
         padding: 0px;
         background-color: var(--preto-transparente);
     }
     
-    .background-cabecalho{
+    .background__cabecalho{
         background-color: var(--preto);
         justify-content: space-between;
         padding: 0.5em 2em;
@@ -664,15 +668,15 @@ div .content{
         margin-right: 1px;
     }
 
-    .listas__item{
+    .background__listas-item{
         padding: 10px;
     }
 
-    .titulo-subtitulo{
+    .conteudo-descricao{
         padding: 20px;
     }
 
-    .titulo-subtitulo h1{
+    .conteudo-descricao__titulo{
         font-size: 40px;
         text-shadow: 3px 3px 5px var(--preto);
     }
@@ -682,7 +686,7 @@ div .content{
         margin: 10px auto;
     }
 
-    .titulo-subtitulo h2{
+    .conteudo-descricao__subtitulo{
         font-weight: bold;
         text-shadow: 3px 3px 5px var(--preto);
         font-size: 23px;
@@ -701,7 +705,7 @@ div .content{
     }
 
     /* CONTAINER DOCES */
-    .container-doces{
+    .container-doces__bloco{
         padding: 0px;
     }
 
@@ -710,22 +714,22 @@ div .content{
         display: none;
     }
 
-    .itens-vantagens{
+    .container-vantagens__itens{
         align-items: center;
         margin: 40px auto;
     }
 
-    .itens-vantagens p{
+    .container-vantagens__itens p{
         font-size: 21px;
         padding: 5px 20px;
         text-align: center;
     }
 
-    .itens-vantagens h3{
+    .container-vantagens__itens h3{
         margin-bottom: 5px;
     }
 
-    .container-vantagens{
+    .container-vantagens__bloco{
         display: block;
     }
 
@@ -735,12 +739,12 @@ div .content{
         padding: 0;
     }
 
-    .item-pessoa{
+    .container-sobre-bloco__itens{
         padding: 20px;
     }
 
     /* FOOTER */
-    .section-about-us{
+    .container-rodape__bloco{
         display: block;
         padding: 20px;
     }
@@ -751,7 +755,7 @@ div .content{
         width: 100%;
     }
 
-    .titulo-subtitulo{
+    .conteudo-descricao{
         padding: 5px;
     }
 }

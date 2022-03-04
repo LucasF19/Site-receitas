@@ -12,45 +12,45 @@
 </head>
 <body>
     <div class="background">
-        <div class="background__lado__esquerdo">
-            <header class="background-cabecalho">
+        <div class="background-esquerdo">
+            <header class="background__cabecalho">
                 <a class="background__logo" href="#">Título</a>
                 <nav class="background__listas">
                     <ul>
-                        <li><a href="#" class="listas__item ativo">Incio</a></li>
-                        <li><a href="#" class="listas__item">Sobre</a></li>
-                        <li><a href="#" class="listas__item">Comunidade</a></li>
-                        <li><a href="#" class="listas__item">Contato</a></li>
+                        <li><a href="#" class="background__listas-item ativo">Incio</a></li>
+                        <li><a href="#" class="background__listas-item">Sobre</a></li>
+                        <li><a href="#" class="background__listas-item">Comunidade</a></li>
+                        <li><a href="#" class="background__listas-item">Contato</a></li>
                         <img class="menu-responsivo" src="assets/img/icons/menu_white_24dp.svg" alt="Menu">
                     </ul>
                 </nav>
             </header>
-            <div class="principal-centralizado">
-                <img class="Imagem-comida-fundo" src="assets/img/fundo/Sushi cook-pana.png" alt="Chef de cozinha">
-                <div class="titulo-subtitulo">
-                    <h1>Receitas Fáceis</h1>
+            <div class="conteudo">
+                <img class="conteudo__imagem" src="assets/img/fundo/Sushi cook-pana.png" alt="Chef de cozinha">
+                <div class="conteudo-descricao">
+                    <h1 class="conteudo-descricao__titulo">Receitas Fáceis</h1>
                     <hr>
-                    <h2>Aprenda novos pratos</h2>
+                    <h2 class="conteudo-descricao__subtitulo">Aprenda novos pratos</h2>
                     <input class="pesquisar-receita" type="search" placeholder="Pesquisar receita">
                     <label for="pesquisar-receita"></label>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bloco-de-vantagens">
+    <div class="container-vantagens">
         <h2>Nossas vantagens</h2>
-        <div class="container-vantagens"> <!-- Blocos centro -->
-            <div class="itens-vantagens">
+        <div class="container-vantagens__bloco"> <!-- Blocos centro -->
+            <div class="container-vantagens__itens">
                 <img src="assets/img/Ideias/Deadline-pana.png" alt="Relógio">
                 <h3>Tempo</h3>
                 <p>Receitas pensadas expecialmente em você que deseja ter uma refeição rápida e saborosa.</p>
             </div>
-            <div class="itens-vantagens">
+            <div class="container-vantagens__itens">
                 <img src="assets/img/Ideias/Mobile login-bro.png" alt="Celular">
                 <h3>Acessível</h3>
                 <p>Sistemas otimizados para dispositivos móveis, acesse em qualquer lugar e a qualquer hora.</p>
             </div>
-            <div class="itens-vantagens">
+            <div class="container-vantagens__itens">
                 <img src="assets/img/Ideias/Piggy bank-amico.png" alt="Cofre de porquinho">
                 <h3>Economia</h3>
                 <p>Ingredientes com preços que cabem no seu bolso, e além de tudo, são uma delicia.</p>
@@ -58,52 +58,52 @@
         </div>
     </div>
     <main> 
-        <section class="menu-de-comidas">
+        <section class="container-comidas">
             <h2>Receitas</h2>
-            <div class="container-comidas">
-                <div class="item-comida">
+            <div class="container-comidas__bloco">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Salmão">
                     <h3>Salmão</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" alt="Rosbife">
                     <h3>Rosbife</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Lámen">
                     <h3>Lámen</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="Poke">
                     <h3>Poke</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80" alt="Tacos">
                     <h3>Tacos</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=422&q=80" alt="Hambúrguer">
                     <h3>Hambúrguer</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=410&q=80" alt="Sanduiche de ovo">
                     <h3>Sanduiche de ovo</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
                     <a href="#">Ver receita</a>
                 </div>
-                <div class="item-comida">
+                <div class="container-comida__itens">
                     <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Salmão defumado">
                     <h3>Salmão defumado</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli architecto.</p>
@@ -123,16 +123,16 @@
                 </div>
             </div>
         </section>
-        <section class="menu-de-doces">
+        <section class="container-doces">
             <h2>Confira nosso menu de doces</h2>
-            <div class="container-doces">
-                <div class="item-doce">
+            <div class="container-doces__bloco">
+                <div class="container-doces__itens">
                     <h3>Strawberry kulfi</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/anna-bratiychuk-UOiHPTEXT3Q-unsplash.jpg" alt="Picolé de morango">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/anna-bratiychuk-UOiHPTEXT3Q-unsplash.jpg" alt="Picolé de morango">
-                        <h3 class="name-receita-overflow">Strawberry kulfi</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/anna-bratiychuk-UOiHPTEXT3Q-unsplash.jpg" alt="Picolé de morango">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/anna-bratiychuk-UOiHPTEXT3Q-unsplash.jpg" alt="Picolé de morango">
+                        <h3>Strawberry kulfi</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -141,13 +141,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Panna cotta</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/karly-gomez-lK1Q5RyD6tc-unsplash.jpg" alt="Panna Cotta">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/karly-gomez-lK1Q5RyD6tc-unsplash.jpg" alt="Panna Cotta">
-                        <h3 class="name-receita-overflow">Panna cotta</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/karly-gomez-lK1Q5RyD6tc-unsplash.jpg" alt="Panna Cotta">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/karly-gomez-lK1Q5RyD6tc-unsplash.jpg" alt="Panna Cotta">
+                        <h3>Panna cotta</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -156,13 +156,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Panqueca americana</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/calum-lewis-8Nc_oQsc2qQ-unsplash.jpg" alt="Panqueca Americana">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/calum-lewis-8Nc_oQsc2qQ-unsplash.jpg" alt="Panqueca Americana">
-                        <h3 class="name-receita-overflow">Panqueca americana</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/calum-lewis-8Nc_oQsc2qQ-unsplash.jpg" alt="Panqueca Americana">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/calum-lewis-8Nc_oQsc2qQ-unsplash.jpg" alt="Panqueca Americana">
+                        <h3>Panqueca americana</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -171,13 +171,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Churros recheado</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/dilyara-garifullina-qVPQpKuOg_U-unsplash.jpg" alt="Churrus recheado">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/dilyara-garifullina-qVPQpKuOg_U-unsplash.jpg" alt="Churrus recheado">
-                        <h3 class="name-receita-overflow">Churros recheado</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/dilyara-garifullina-qVPQpKuOg_U-unsplash.jpg" alt="Churrus recheado">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/dilyara-garifullina-qVPQpKuOg_U-unsplash.jpg" alt="Churrus recheado">
+                        <h3>Churros recheado</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -186,13 +186,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Brigadeiro</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/ediglecio-lela-jGh5Qj4jQ-s-unsplash.jpg" alt="Brigadeiro">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/ediglecio-lela-jGh5Qj4jQ-s-unsplash.jpg" alt="Brigadeiro">
-                        <h3 class="name-receita-overflow">Brigadeiro</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/ediglecio-lela-jGh5Qj4jQ-s-unsplash.jpg" alt="Brigadeiro">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/ediglecio-lela-jGh5Qj4jQ-s-unsplash.jpg" alt="Brigadeiro">
+                        <h3>Brigadeiro</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -201,13 +201,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Chocolate quente</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/food-photographer-jennifer-pallian-X2gM-SIufpU-unsplash.jpg" alt="Chocolate Quente">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/food-photographer-jennifer-pallian-X2gM-SIufpU-unsplash.jpg" alt="">
-                        <h3 class="name-receita-overflow">Chocolate quente</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/food-photographer-jennifer-pallian-X2gM-SIufpU-unsplash.jpg" alt="Chocolate Quente">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/food-photographer-jennifer-pallian-X2gM-SIufpU-unsplash.jpg" alt="">
+                        <h3>Chocolate quente</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -216,13 +216,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Cupcake</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/luisana-zerpa-MJPr6nOdppw-unsplash.jpg" alt="Cupcake">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/luisana-zerpa-MJPr6nOdppw-unsplash.jpg" alt="">
-                        <h3 class="name-receita-overflow">Cupcake</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/luisana-zerpa-MJPr6nOdppw-unsplash.jpg" alt="Cupcake">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/luisana-zerpa-MJPr6nOdppw-unsplash.jpg" alt="">
+                        <h3>Cupcake</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -231,13 +231,13 @@
                         <a href="#">Ver receita completa</a>
                     </div>
                 </div>
-                <div class="item-doce">
+                <div class="container-doces__itens">
                     <h3>Picole recheado</h3>
-                    <img class="Imagem-item-doce" src="assets/img/comidas doce/isabella-and-zsa-fischer-TBh5l561yKM-unsplash.jpg" alt="Picolé Recheado">
-                    <div class="receita-overflow">
-                        <img class="imagem-overflow" src="assets/img/comidas doce/isabella-and-zsa-fischer-TBh5l561yKM-unsplash.jpg" alt="">
-                        <h3 class="name-receita-overflow">Picole recheado</h3>
-                        <ul class="lista-ingredientes">
+                    <img class="container-doces__image" src="assets/img/comidas doce/isabella-and-zsa-fischer-TBh5l561yKM-unsplash.jpg" alt="Picolé Recheado">
+                    <div class="overflow-receita">
+                        <img class="overflow-receita__image" src="assets/img/comidas doce/isabella-and-zsa-fischer-TBh5l561yKM-unsplash.jpg" alt="">
+                        <h3>Picole recheado</h3>
+                        <ul class="overflow-receita__listas">
                             <li>Um</li>
                             <li>Dois</li>
                             <li>Tres</li>
@@ -249,20 +249,20 @@
             </div>
         </section>
     </main>
-    <div class="bloco-quem-somos">
+    <div class="container-sobre">
         <h2>Conheça nossa equipe!</h2>
-        <div class="container-pessoas">
-            <div class="item-pessoa">
+        <div class="container-sobre-bloco">
+            <div class="container-sobre-bloco__itens">
                 <img src="assets/img/pessoas/logan-weaver-p0B7ueoZz8E-unsplash.jpg" alt="">
                 <h3>Logan Weaven</h3>
                 <p>Diretor</p>
             </div>
-            <div class="item-pessoa">
+            <div class="container-sobre-bloco__itens">
                 <img src="assets/img/pessoas/edward-cisneros-_H6wpor9mjs-unsplash.jpg" alt="">
                 <h3>Cibelly Roberta</h3>
                 <p>Marketing</p>
             </div>
-            <div class="item-pessoa">
+            <div class="container-sobre-bloco__itens">
                 <img src="assets/img/pessoas/cibelly-roberta-SE4Xc1WvIkU-unsplash.jpg" alt="">
                 <h3>Edward Cisneros</h3>
                 <p>Chef de cozinha</p>
@@ -270,12 +270,12 @@
         </div>
     </div>
     <footer>
-        <div class="conteudo-rodape">
-            <div class="section-about-us">
-                <div class="box">
+        <div class="container-rodape">
+            <div class="container-rodape-bloco">
+                <div class="container-rodape-bloco__item">
                     <h2>About us</h2>
                     <hr>
-                    <div class="content">
+                    <div class="container-rodape-bloco__content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="redes-sociais">
@@ -284,16 +284,16 @@
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="Link youtube"></a>
                         <a href="#"><img src="https://img.icons8.com/color/48/fa314a/tiktok--v1.png" alt="Link tiktok--v1"></a>
                     </div>
-                </div> <!-- Left box  -->
-                <div class="box">
+                </div> <!-- Left container-rodape-bloco__item  -->
+                <div class="container-rodape-bloco__item">
                     <h2>Subscribe</h2>
                     <hr>
-                    <div class="content">
+                    <div class="container-rodape-bloco__content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, minima!</p>
                         <button>Se inscrever</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="container-rodape-bloco__item">
                     <h2>Contact</h2>
                     <hr>
                     <div class="div-contato">
