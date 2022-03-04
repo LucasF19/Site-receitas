@@ -349,18 +349,14 @@ hr {
     position: relative;
     margin: 20px 0px;
     background: #111111;
+    transition: 0.5s ease-in-out;
 }
 
 .container-doces__image{
     display: block;
     height: 400px;
-    object-fit: cover;
     width: 300px;
-    transition: 0.5s;
-}
-
-.container-doces__image:hover{
-    opacity: 0;
+    object-fit: cover;
 }
 
 .overflow-receita{
@@ -387,21 +383,21 @@ hr {
 
 .overflow-receita ul{
     color: var(--card-text-color);
-    margin-left: 20px;
     font-size: 19px;
-    padding-left: 10px;
+    margin-left: 20px;
     list-style: disc;
 }
 
 .overflow-receita__listas li{
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .overflow-receita a{
     font-size: 20px;
     border-radius: 10px;
     background-color: var(--hover-food);
-    margin: 10px auto;
+    margin: 0px auto;
+    margin-bottom: 10px;
     width: 250px;
     padding: 10px;
     color: #e3e3e3;
@@ -487,7 +483,9 @@ hr {
     padding: 5px;
     text-align: center;
 }
-/* Footer */    
+
+
+/* FOOTER */    
 .container-rodape{
     font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
     background-color: var(--preto);
@@ -496,7 +494,7 @@ hr {
 
 .container-rodape-bloco{
     display: flex;
-    padding: 30px 0px;
+    padding: 15px 0px;
     justify-content: space-evenly;
 }
 
