@@ -527,24 +527,28 @@ hr {
     border-color: #ff3838;
 }
 
-.div-contato{
+.container-contato{
     display: flex;
     flex-direction: column;
 }
 
-
-.icons{
-    display: inline-flex;
+.container-contato__address{
+    display: flex;
     padding: 10px 0px;
+    align-items: center;
+}
+.container-contato__address-link-contact{
+    color: white;
+    text-decoration: none;
 }
 
-.container-rodape-bloco__item .icons img {
+.container-contato__address-link-contact:hover{
+    text-decoration: underline;
+}
+
+.container-rodape-bloco__item .container-contato__address img {
     margin-right: 15px;
     object-fit: contain;
-}
-
-div .container-rodape-bloco__content{
-    padding: 5px 0px;
 }
 
 .container-rodape-bloco__content button{
