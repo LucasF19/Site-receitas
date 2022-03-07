@@ -512,6 +512,10 @@ hr {
     margin: 10px 3px;
     padding: 5px;
 }
+.container-rodape-bloco{
+    display: block;
+    padding: 15px;
+}
 
 .container-rodape-bloco__item{
     margin: 0px auto;
