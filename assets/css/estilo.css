@@ -107,7 +107,10 @@
 }
 
 .conteudo{
-    padding-bottom: 55px;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .conteudo-descricao{
@@ -569,9 +572,8 @@ hr {
 /* RESPONSIVO */
 @media screen and (max-width: 1000px){
     /* INÍCIO TELA PRINCIPAL */
-
     .conteudo__imagem{
-        width: 75%;
+        width: 85%;
         transition: 0.5s;
     }
 
@@ -581,7 +583,6 @@ hr {
 
     .background__cabecalho{
         justify-content: space-between;
-        padding: 10px 15px;
     }
 
     .background__listas{
