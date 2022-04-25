@@ -107,7 +107,6 @@
 }
 
 .conteudo{
-    height: calc(100vh - 60px);
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -118,6 +117,7 @@
     font-weight: bold;
     font-size: 60px;
     text-align: center;
+    margin: 15px;
 }
 
 hr {
@@ -231,11 +231,11 @@ hr {
     flex-direction: column;
     margin: 10px;
     width: 300px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .container-comida__itens:hover{
-    flex-grow: 0.5;
+    transform: scale(1.1);
 }
 
 .container-comida__itens img{
@@ -641,6 +641,10 @@ hr {
 }
 @media screen and (max-width: 660px){
     /* INICIO */
+    .conteudo{
+        height: 100%;
+    }
+
     .conteudo__imagem{
         width: 300px;
     }
@@ -659,7 +663,6 @@ hr {
         background-color: var(--preto);
         justify-content: space-between;
         padding: 0.5em 2em;
-
     }
 
     .menu{
@@ -754,13 +757,17 @@ hr {
     }
 }
 
-@media screen and (max-width: 325px){
-    .pesquisar-receita{
-        width: 100%;
-    }
-
+@media screen and (max-width: 395px){
     .conteudo-descricao{
         padding: 5px;
+    }
+
+    .conteudo{
+        height: 100%;
+    }
+
+    .pesquisar-receita{
+        width: 70%;
     }
 }
 
